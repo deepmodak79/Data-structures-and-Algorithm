@@ -1,0 +1,96 @@
+//P1:-Write a function sayHello() that prints:
+"Hello"
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void sayHello(){
+    cout<<"Hello";
+}
+
+
+int main(){
+    sayHello();
+    return 0;
+}
+
+
+
+---------------------------------------------------------------------
+//P2:-Write a function showName() that prints your name.
+#include <bits/stdc++.h>
+using namespace std;
+
+void showName(){
+    cout<<"Deep Modak";
+}
+
+
+int main(){
+    showName();
+    return 0;
+}
+
+-------------------------------------------------------------------------
+//P3:- Write a function printThreeLines() that prints 3 different lines.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void printThreeLines(){
+    cout<<"Hi my name is Deep Modak"<<endl;
+    cout<<"Im 24 years old"<<endl;
+    cout<<"Im from COB"<<endl;
+}
+
+
+int main(){
+    printThreeLines();
+    return 0;
+}
+
+------------------------------------------------------------------------------
+//P4:- Write a function addNumbers() that creates two integers and prints their sum.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void addNumbers(){
+    int a;
+    int b;
+    cout<<"Enter the value of a : ";
+    cin>>a;
+    cout<<"Enter the value of b : ";
+    cin>>b;
+    int sum=a+b;
+    cout<<"sum of a+b = "<<sum;
+}
+
+
+int main(){
+    addNumbers();
+    return 0;
+}
+
+---------------------------------------------------------------------------------
+//P5:- Write a function checkNumber() that stores one number and prints "Positive" if greater than 0, otherwise "Not Positive".
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void checkNumber(){
+    int x;
+    cout<<"Enter the value x : ";
+    cin>> x;
+    if (x>0){
+        cout<<"Positive";
+    }
+    else
+    cout<<"Not Positive";
+    
+}
+
+int main(){
+    checkNumber();
+    return 0;
+}
