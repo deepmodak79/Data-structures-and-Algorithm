@@ -1,0 +1,15 @@
+//minimum element in array
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int arr[5]={5,8,9,2,0};
+int mini=arr[0];
+int main(){
+    for(int i=1;i<5;i++){
+        if(mini>arr[i])
+        mini=arr[i];
+    }
+    cout<<mini;
+    return 0;
+}
