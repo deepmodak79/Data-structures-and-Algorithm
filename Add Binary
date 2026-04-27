@@ -1,0 +1,56 @@
+// 67. Add Binary
+// Given two binary strings a and b, return their sum as a binary string.
+
+class Solution {
+public:
+    string addBinary(string a, string b) {
+        string result = "";
+
+        int i = a.length() - 1;
+        int j = b.length() - 1;
+
+        int carry = 0;
+
+        while (i >= 0 || j >= 0) {
+            int bit1 = 0;
+            int bit2 = 0;
+
+            if (i >= 0) {
+                bit1 = a[i] - '0';
+            }
+
+            if (j >= 0) {
+                bit2 = b[j] - '0';
+            }
+
+            int sum = bit1 + bit2 + carry;
+
+            if (sum == 0) {
+                result = "0" + result;
+                carry = 0;
+            }
+            else if (sum == 1) {
+                result = "1" + result;
+                carry = 0;
+            }
+            else if (sum == 2) {
+                result = "0" + result;
+                carry = 1;
+            }
+            else { 
+                // sum == 3
+                result = "1" + result;
+                carry = 1;
+            }
+
+            i--;
+            j--;
+        }
+
+        if (carry == 1) {
+            result = "1" + result;
+        }
+
+        return result;
+    }
+};
