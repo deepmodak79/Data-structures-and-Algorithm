@@ -1,0 +1,28 @@
+Return the sum of two numbers
+
+Write a function that takes two integers and returns their sum.
+
+Example
+Input: 3, 7
+Output: 10
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int sum(int a, int b){
+    return a+b;
+} 
+
+
+int main(){
+    int a,b;
+    cout<<"Enter the value of a : ";
+    cin>>a;
+    cout<<"Enter the value of b : ";
+    cin>>b;
+    cout<<"Sum of a+b = "<< sum(a,b);
+    return 0;
+}
