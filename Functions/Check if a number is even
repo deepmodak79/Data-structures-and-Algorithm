@@ -1,0 +1,28 @@
+Check if a number is even
+
+Write a function that takes an integer and returns true if it is even, otherwise false.
+
+Example
+Input: 8
+Output: true
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+bool isEven(int a){
+    if(a%2==0)
+        return true;
+        else 
+        return false;
+}; 
+
+
+int main(){
+    int a;
+    cout<<"Enter the value of a : ";
+    cin>>a;
+    cout<<boolalpha<< isEven(a);
+    return 0;
+}
