@@ -1,0 +1,27 @@
+Check if a number is positive
+
+Write a function that takes an integer and returns true if it is positive, otherwise false.
+
+Example
+Input: 10
+Output: true
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool ispositive(int n){
+    if (n>0)
+    return true;
+    else
+    return false;
+}
+
+
+int main(){
+    int n;
+    cout<<"Enter the value of n ";
+    cin>>n;
+    cout<<boolalpha<<ispositive(n);
+    return 0;
+}
