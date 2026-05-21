@@ -1,0 +1,32 @@
+Return the bigger of two numbers
+
+Write a function that takes two integers and returns the larger one.
+
+Example
+Input: 4, 9
+Output: 9
+Expected idea
+int getMax(int a, int b)
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int getmax(int a, int b){
+    if(a>b)
+    return a;
+    else 
+    return b;
+}
+
+int main(){
+    int a,b;
+    cout<<"Enter the value of a ";
+    cin>>a;
+    cout<<"Enter the value of b ";
+    cin>>b;
+    getmax(a,b);
+    cout<<getmax(a,b);
+    return 0;
+}
