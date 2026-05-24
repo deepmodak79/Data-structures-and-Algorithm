@@ -1,0 +1,41 @@
+Write a function that takes a string and returns its length.
+
+Example
+Input: "deep"
+Output: 4
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int strsize(string s){
+    return s.length();
+}
+
+int main(){
+    string s;
+    cout<<"Enter the value of s : ";
+    getline(cin,s); // So we use this because to count space as well as if we only write cin>>s stops 
+    //cin>>s;
+    cout<<"The length of the value s is "<<strsize(s);
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------------
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int getLength(const string& s){
+    return s.length();
+}
+
+int main(){
+    string s;
+    cout<<"Enter the value of s : ";
+    getline(cin,s); // So we use this because to count space as well as if we only write cin>>s then it will stops after space or tab and if we write anyhting after it will not calculate that.
+    //cin>>s;
+    cout<<"The length of the value s is "<<getLength(s);
+    return 0;
+}
