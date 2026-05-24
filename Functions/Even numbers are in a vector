@@ -1,0 +1,36 @@
+Count how many even numbers are in a vector
+
+Write a function that takes a vector of integers and returns the count of even numbers.
+
+Example
+Input: [1, 2, 4, 7, 8]
+Output: 3
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int evennumber(const vector<int>& nums){
+    int sum = 0;
+    for(int i=0;i<nums.size();i++){
+        if(nums[i]%2==0){
+       sum = sum+1;
+       //cout << nums[i]<<" "; this is to print the positve number as well
+        }
+    }
+    return sum;
+}
+
+int main(){
+    int n;
+    cout<<"Enter the number is arrays : ";
+    cin>>n;
+    vector<int> nums(n);
+    for (int i=0;i<n;i++){
+        cout<<"Enter the values that stored in array : ";
+        cin>>nums[i];
+    }
+    cout << endl;
+    cout<<evennumber(nums);
+    return 0;
+}
