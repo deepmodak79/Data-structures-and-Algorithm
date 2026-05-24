@@ -1,0 +1,39 @@
+Return the sum of all elements in a vector
+
+Write a function that takes a vector of integers and returns the total sum.
+
+Example
+Input: [1, 2, 3, 4]
+Output: 10
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int a;
+int getsum(const vector<int>& nums){
+    int sum = 0;
+    for(int i=0;i<nums.size();i++){
+        sum=sum + nums[i];
+    }
+    return sum;
+}
+
+int main(){
+    int n;
+    cout<<"Enter the number of arrays : ";
+    cin>>n;
+    
+    vector<int> nums(n);
+    for(int i=0;i<n;i++){
+        cout<<"Enter the value of array : ";
+        cin>>nums[i];
+    }
+//This commented code is for seeing the array that user is printing.
+    // cout << "Array elements are : ";
+    // for(int i = 0; i < n; i++){
+    //     cout << nums[i] << " ";
+    // }
+    cout<<"Sum of all the array is : ";
+    cout<<getsum(nums);
+    return 0;
+}
