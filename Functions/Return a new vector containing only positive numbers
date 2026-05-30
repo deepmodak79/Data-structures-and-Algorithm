@@ -1,0 +1,40 @@
+Return a new vector containing only positive numbers
+
+Write a function that takes a vector of integers and returns a new vector containing only the positive numbers.
+
+Example
+Input: [-2, 5, 0, 7, -1]
+Output: [5, 7]
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+vector<int> getpostiveNumbers(const vector<int>& nums){
+    vector<int> result;
+    for(int i=0;i<nums.size();i++){
+        if(nums[i]>0){
+            result.push_back(nums[i]);
+        }
+        
+    }
+    return result;
+}
+
+int main(){
+    int n;
+    cout<<"Enter the size of array ";
+    cin>>n;
+    
+    vector<int> nums(n);
+    for(int i=0;i<n;i++){
+        cin>>nums[i];
+    }
+    vector<int> positives = getpostiveNumbers(nums);
+    
+    for(int i=0; i<positives.size();i++){
+        cout<<positives[i]<<" ";
+    }
+    return 0;
+}
