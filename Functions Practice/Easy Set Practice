@@ -1,0 +1,155 @@
+1. -------------------------------------------------------------------------------------------
+//Write a function named addNumbers that:
+
+//Accepts two integers
+//Returns their sum
+//Is called from main()
+//Prints the returned result
+
+
+#include <iostream>
+using namespace std;
+
+int addNumbers(int a, int b){
+    int sum=a+b;
+    return sum;
+}
+
+
+int main(){
+    int a,b;
+    cout<<"Enter the value of a : ";
+    cin>>a;
+    cout<<"Enter the value of b : ";
+    cin>>b;
+    int result=addNumbers(a,b);
+    cout<<"Sum of value a and b : ";
+    cout<<result;
+    return 0;
+}
+
+
+2. ----------------------------------------------------------------------------------------------
+
+
+// Write a function named isEven that:
+
+// Accepts one integer
+// Returns true if the number is even
+// Returns false if the number is odd
+// Is called from main()
+// Prints Even or Odd
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isEven(int number) {
+    if (number%2==0)
+        return true;
+    else
+    return false;
+}
+
+int main(){
+    int number;
+    cout<<"Enter the value of number : ";
+    cin>>number;
+    int result=isEven(number);
+    // cout<<result;
+    if(result==1)
+    cout<<"even";
+    else 
+    cout<<"odd";
+}
+
+
+
+3. ------------------------------------------------------------------------------------------------
+
+// Write a function named findGreater that:
+
+// Accepts two integers
+// Returns the greater number
+// Is called from main()
+// Prints the returned result
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int findGreater(int a, int b) {
+    if(a>b){
+        return a;
+    }
+    else{
+        return b;
+    }
+    
+}
+
+int main(){
+    int a,b;
+    cout<<"Enter the value of a : ";
+    cin>>a;
+    cout<<"Enter the value of b : ";
+    cin>>b;
+    int result=findGreater(a,b);
+    cout<<"The greater number among a and b : ";
+    cout<<result;
+    return 0;
+}
+
+
+4.----------------------------------------------------------------------------------------------
+
+// Write a function named findSquare that:
+
+// Accepts one integer
+// Returns its square
+// Is called from main()
+// Prints the returned result
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int findSquare(int number) {
+    return number*number;
+}
+
+int main(){
+    int number;
+    cout<<"Enter the value of number : ";
+    cin>> number;
+    int result=findSquare(number);
+    cout<<result;
+    return 0;
+}
+
+5.---------------------------------------------------------------------------------------------------
+
+// Write a function named findCube that:
+
+// Accepts one integer
+// Returns its cube
+// Is called from main()
+// Prints the returned result
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int findcube(int number) {
+    return number*number*number;
+}
+
+int main(){
+    int number;
+    cout<<"Enter the value of number : ";
+    cin>> number;
+    int result=findcube(number);
+    cout<<result;
+    return 0;
+}
